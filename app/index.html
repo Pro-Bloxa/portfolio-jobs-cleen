@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jobs-clean</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+
+      <div class="header__block">
+        <img class="header__logo" src="./images/logo_small.png" alt="logo">
+        <div class="header__block-wrapper">
+          <p class="header__block-subtitle">Требуются специалисты по уборке</p>
+          <h1 class="header__block-title title">Надежный доход и удобный график работы</h1>
+        </div>
+        <a href="form.html" class="header__block_button button">Записаться</a>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="benefit">
+      <div class="container benefit__container">
+        <h2 class="benefit__title title">Мы предлагаем</h2>
+        <div class="benefit__box">
+          <article class="benefit__block">
+            <div class="benefit__block-img">
+              <img class="benefit__block-image" src="images/Hand-money.png" alt="money">
+            </div>
+            <h3 class="benefit__block-title title-small">Выплаты вовремя</h3>
+            <p class="benefit__block-text benefit__block-text_first text">Выплата на банковскую карту. 2 раза в месяц.
+            </p>
+          </article>
+          <article class="benefit__block">
+            <div class="benefit__block-img">
+              <img class="benefit__block-image" src="images/table.png" alt="table">
+            </div>
+            <h3 class="benefit__block-title title-small">Удобное расписание</h3>
+            <p class="benefit__block-text text">Большой выбор графиков. Можно составить индивидуальный.</p>
+          </article>
+          <article class="benefit__block">
+            <div class="benefit__block-img">
+              <img class="benefit__block-image" src="images/agreement.png" alt="agreement">
+            </div>
+            <h3 class="benefit__block-title title-small">Много заказов</h3>
+            <p class="benefit__block-text text">Скажите свои рабочие дни, а мы обеспечим заказами.</p>
+          </article>
+          <article class="benefit__block">
+            <div class="benefit__block-img">
+              <img class="benefit__block-image" src="images/inventory.png" alt="inventory">
+            </div>
+            <h3 class="benefit__block-title title-small">Выдаем инвентарь</h3>
+            <p class="benefit__block-text text">Все необходимое для уборки предоставляет компания.</p>
+          </article>
+        </div>
+      </div>
+
+    </section>
+    <section class="team">
+      <div class="container">
+        <h2 class="team__title title">Как стать частью команды?</h2>
+        <div class="team__box">
+          <article class="team__block team__block_first">
+            <div class="team__block-number">
+              <p class="team__block-number_text">1</p>
+              <h3 class="team__block-title title-small">Заполните анкету</h3>
+            </div>
+
+            <p class="team__block-text text">Расскажите немного про себя. Нам важно познакомиться.</p>
+          </article>
+          <article class="team__block">
+            <div class="team__block-number">
+              <p class="team__block-number_text">2</p>
+              <h3 class="team__block-title title-small">Оплачиваемая стажировка</h3>
+            </div>
+
+            <p class="team__block-text text">Выйдете на реальный заказа с опытным клинером. Стажировка полностью
+              оплачивается</p>
+          </article>
+          <article class="team__block">
+            <div class="team__block-number">
+              <p class="team__block-number_text">3</p>
+              <h3 class="team__block-title title-small">Работайте зарабатывайте</h3>
+            </div>
+
+            <p class="team__block-text text">Вы часть дружной команды. Сделайте свою жизнь стабильной с UberClean.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="questionnaire">
+      <div class="container">
+        <div class="questionnaire__title-block">
+          <h2 class="questionnaire__title title">Анкета</h2>
+          <img src="images/form.png" alt="questionnaire">
+        </div>
+      </div>
+
+      <div class="questionnaire__box">
+        <div class="container">
+          <div class="questionnaire__block">
+            <!-- <img class="questionnaire__block-img" src="images/woman.png" alt="woman"> -->
+            <form class="questionnaire__block-form form" id="form-data" method="POST" action="#">
+              <label class="questionnaire__block-label">
+                Ф.И.О.
+                <input class="questionnaire__block-field field" name="name" type="text" required>
+              </label>
+              <label class="questionnaire__block-label">
+                Дата рождения
+                <input class="questionnaire__block-field field" name="birthday" type="text" placeholder="22.03.1975"
+                  required>
+              </label>
+              <label class="questionnaire__block-label">
+                Телефон
+                <div class="questionnaire__block-tel field-tel">
+                  <input class="questionnaire__block-tel_left field-tel_left" type="text" placeholder="+7" readonly>
+                  <input class="questionnaire__block-tel_right field-tel_right" name="phone" type="tel" required>
+                </div>
+              </label>
+              <label class="questionnaire__block-label">
+                Гражданство
+                <select class="questionnaire__block-select questionnaire__block-field field form-select"
+                  name="nationality" required>
+                  <option value="" selected>Выберите из списка</option>
+                  <option value="Россия">Россия</option>
+                  <option value="Украина">Украина</option>
+                  <option value="Казахстан">Казахстан</option>
+                  <option value="Турция">Турция</option>
+                  <option value="Греция">Греция</option>
+                  <option value="Монголия">Монголия</option>
+                  <option value="Китай">Китай</option>
+                </select>
+              </label>
+            </form>
+            <button class="questionnaire__block-button button" form="form-data" type="submit">Записаться на
+              собеседование</button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+  <footer class="footer">
+    <a href="form.html" class="footer__block-button_none button">Записаться на собеседование</a>
+    <div class="container footer__container">
+
+      <h2 class="footer__title title">Отвечаем на вопросы</h2>
+      <article class="footer__block">
+        <h3 class="footer__block-title title-small">На первую уборку я поеду одна?</h3>
+        <p class="footer__block-text text">Нет. На первый заказ вы едите с опытным клинером, вашим наставником.</p>
+      </article>
+      <article class="footer__block">
+        <h3 class="footer__block-title title-small">Мне оплатят стажировку?</h3>
+        <p class="footer__block-text text">Да, стажировка оплачивается. Ведь вы едите на полноценный заказ.</p>
+      </article>
+      <article class="footer__block">
+        <h3 class="footer__block-title title-small">Что мне нужно делать на уборке?</h3>
+        <p class="footer__block-text text">Это все расскажут на собеседовании. Потом все повторят на уборке на практике.
+          И выдадим очень подробную инструкцию..</p>
+      </article>
+      <article class="footer__block">
+        <h3 class="footer__block-title title-small">Какой у меня будет график работы?</h3>
+        <p class="footer__block-text text">У нас большие и гибкие возможности. Поэтому вы можете составить свой график
+          работы. Указать время в которое принимаете заказы. Самые популярные графики в нашей компании 5/2 6/1 2/2</p>
+      </article>
+      <article class="footer__block">
+        <h3 class="footer__block-title title-small">Что взять с собой на первую уборку?</h3>
+        <p class="footer__block-text text">Весь инвентарь будет у вашего наставника. Вам нужно только взять сменную
+          одежду для комфортной работы. После стажировки вам предоставят форму.</p>
+      </article>
+      <a href="form.html" class="footer__block_button button">Записаться</a>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

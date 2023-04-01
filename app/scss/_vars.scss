@@ -1,0 +1,38 @@
+$color-black: #000000;
+$color-white: #FFFFFF;
+$color-gray: #C5BEBE;
+$color-popup: #C4C4C4;
+$color-circle: #AAD4C8;
+$color-button: #B5CA00;
+
+@mixin fontz($fw, $fs, $c, $lh) {
+    font-weight: $fw;
+    font-size: $fs;
+    color: $c;
+    line-height: $lh;
+}
+
+%button {
+    display: block;
+    width: 295px;
+    padding-top: 19px;
+    padding-bottom: 20px;
+    text-align: center;
+    @include fontz(700, 18px, $color-white, 21px);
+    border: 1px solid $color-button;
+    border-radius: 4px;
+    background-color: $color-button;
+}
+
+%title-big {
+    text-align: center;
+    @include fontz(400, 40px, $color-black, 46.9px);
+}
+
+%title-small {
+    @include fontz(400, 23px, $color-black, 27px);
+}
+
+%text {
+    @include fontz(300, 16px, $color-black, 18.8px)
+}

@@ -1,0 +1,301 @@
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .header {
+        height: 450px;
+
+        &__block {
+            padding-top: 86px;
+
+            &-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+        }
+    }
+
+    .benefit__block {
+        width: 40%;
+
+        &:nth-child(n+3) {
+            margin-top: 25px;
+        }
+
+        &-image {
+            display: block;
+        }
+
+        &-title {
+            text-align: left;
+        }
+    }
+
+    .questionnaire__block {
+        padding-top: 50px;
+
+        &-form {
+            width: 360px;
+            min-height: 363px;
+
+            flex-wrap: nowrap;
+            align-content: flex-satrt;
+        }
+
+        &-label {
+            &:nth-child(n+2) {
+                margin-top: 28px;
+            }
+        }
+    }
+}
+
+// =====================================================================
+@media (max-width: 768px) {
+
+    %title-big {
+        text-align: center;
+        @include fontz(400, 30px, $color-black, 35px);
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .header__block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-end;
+
+        &-title {
+            width: 280px;
+            text-align: right;
+        }
+
+        &_button {
+            margin-top: 35px;
+        }
+    }
+
+    .team__title {
+        margin-top: 53px;
+        margin-bottom: 53px;
+    }
+
+    .team__block {
+        width: 30%;
+    }
+
+    .questionnaire__title-block {
+        margin-top: 55px;
+        margin-bottom: 25px;
+    }
+
+    .footer__title {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .footer__block_button {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+// =====================================================================
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .header {
+        height: 520px;
+        background-image: url(../images/header-bg-mobile.jpg);
+        background-size: cover;
+
+        &__logo {
+            display: block;
+            margin: 0 auto;
+            width: 175px;
+            margin-top: 180px;
+        }
+    }
+
+    .header__block {
+        position: relative;
+        align-items: center;
+
+        &-wrapper {
+            position: absolute;
+            padding: 18px 0;
+            width: 295px;
+            align-items: center;
+            background-color: $color-white;
+            border-radius: 10px;
+            top: 430px;
+            box-shadow: 0 5px 5px rgba(122, 122, 122, 0.5);
+        }
+
+        &-subtitle {
+            font-size: 16px;
+        }
+
+        &-title {
+            margin-bottom: 0;
+            text-align: center;
+            font-size: 28px;
+        }
+
+        &_button {
+            margin-top: 19px;
+            width: 295px;
+            border: 1px solid $color-white;
+        }
+    }
+
+    .benefit__container {
+        margin-top: 150px;
+    }
+
+    .benefit__title {
+        margin-bottom: 41px;
+    }
+
+    .benefit__box {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .benefit__block {
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &:nth-child(n+2) {
+            margin-top: 58px;
+        }
+
+        &-title {
+            width: 100%;
+            text-align: center;
+        }
+
+        &-text {
+            text-align: center;
+
+            &_first {
+                width: 167px;
+            }
+        }
+    }
+
+    .team__box {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .team__block {
+        margin: 0 auto;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &:nth-child(n+2) {
+            margin-top: 35px;
+        }
+
+        &-number {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 39px;
+
+            &_text {
+                flex-shrink: 0;
+            }
+        }
+    }
+
+    .questionnaire__title-block {
+        width: 170px;
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 13px;
+    }
+
+    .questionnaire__block {
+        background-image: none;
+
+        &-form {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        &-field {
+            width: 100%;
+        }
+
+        &-tel {
+            width: 100%;
+        }
+
+        &-button {
+            display: none;
+        }
+    }
+
+    .footer__container {
+
+        padding-left: 40px;
+        padding-right: 35px;
+        margin-bottom: 15px;
+    }
+
+    .footer__title {
+        margin-top: 75px;
+    }
+
+    .footer__block {
+        &-button_none {
+            margin: 0 auto;
+            margin-top: 68px;
+            display: block;
+        }
+
+        &-title {
+            position: relative;
+            font-size: 20px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                background-color: $color-black;
+                border-radius: 50%;
+                top: 10px;
+                left: -15px;
+                //vertical-align: middle;
+            }
+        }
+
+        &-text {
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        &_button {
+            display: none;
+        }
+    }
+}

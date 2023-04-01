@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <section class="popup">
+    <div class="popup-big">
+      <a class="popup-big__cross" href="index.html"><img class="cross" src="./images/cross.png" alt="закрыть"></a>
+
+      <form class="popup__form form" id="form-popup" action="#" method="POST">
+        <label class="popup__form-label">
+          Ф.И.О.
+          <input class="popup__form-field field" type="text" name="name" required>
+        </label>
+        <label class="popup__form-label">
+          Дата рождения
+          <input class="popup__form-field field" name="birthday" type="text" placeholder="22.03.1975" required>
+        </label>
+        <label class="popup__form-label">
+          Телефон
+          <div class="popup__form-tel field-tel">
+            <input class="popup__form-tel_left field-tel_left" type="text" placeholder="+7" readonly>
+            <input class="popup__form-tel_right field-tel_right" name="phone" type="tel" required>
+          </div>
+        </label>
+        <label class="popup__form-label">
+          Гражданство
+          <select class="popup__form-select popup__form-field field form-select" name="nationality" required>
+            <option value="" selected>Выберите из списка</option>
+            <option value="Россия">Россия</option>
+            <option value="Украина">Украина</option>
+            <option value="Казахстан">Казахстан</option>
+            <option value="Турция">Турция</option>
+            <option value="Греция">Греция</option>
+            <option value="Монголия">Монголия</option>
+            <option value="Китай">Китай</option>
+          </select>
+        </label>
+        <button class="popup__form-button button" form="form-popup" type="submit">Записаться на
+          собеседование</button>
+      </form>
+    </div>
+    <div class="popup-small display-none">
+      <a class="popup-small__cross" href="index.html"><img class="cross" src="./images/cross.png" alt="закрыть"></a>
+
+      <h2 class="popup-small__title">Вы успешно записаны!</h2>
+      <p class="popup-small__text">Сейчас вам перезвонят для уточнения деталей.</p>
+    </div>
+  </section>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
