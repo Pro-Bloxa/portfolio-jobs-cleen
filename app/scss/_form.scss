@@ -24,7 +24,7 @@
         right: 20px;
     }
 
-    &__form {
+    &-form {
         padding: 40px 55px;
         height: 585px;
         width: 470px;
@@ -33,7 +33,7 @@
         background-color: $color-popup;
     }
 
-    &__form-button {
+    &-form__button {
         width: 360px;
         margin-top: 25px;
         cursor: pointer;
@@ -74,19 +74,19 @@
         padding-left: 10px;
         padding-right: 10px;
 
-        &__form {
+        &-form {
             width: 100%;
         }
 
-        &__form-field {
+        &-form__field {
             width: 280px;
         }
 
-        &__form-tel {
+        &-form__tel {
             width: 100%;
         }
 
-        &__form-button {
+        &-form__button {
             width: 100%;
         }
 

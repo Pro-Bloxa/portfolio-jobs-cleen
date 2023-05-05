@@ -14,25 +14,25 @@
     <div class="popup-big">
       <a class="popup-big__cross" href="index.html"><img class="cross" src="./images/cross.png" alt="закрыть"></a>
 
-      <form class="popup__form form" id="form-popup" action="#" method="POST">
-        <label class="popup__form-label">
+      <form class="popup-form form" id="form-popup" action="#" method="POST">
+        <label class="popup-form__label">
           Ф.И.О.
-          <input class="popup__form-field field" type="text" name="name" required>
+          <input class="popup-form__field field" type="text" name="name" required>
         </label>
-        <label class="popup__form-label">
+        <label class="popup-form__label">
           Дата рождения
-          <input class="popup__form-field field" name="birthday" type="text" placeholder="22.03.1975" required>
+          <input class="popup-form__field field" name="birthday" type="text" placeholder="22.03.1975" required>
         </label>
-        <label class="popup__form-label">
+        <label class="popup-form__label">
           Телефон
-          <div class="popup__form-tel field-tel">
-            <input class="popup__form-tel_left field-tel_left" type="text" placeholder="+7" readonly>
-            <input class="popup__form-tel_right field-tel_right" name="phone" type="tel" required>
+          <div class="popup-form__tel field-tel">
+            <input class="popup-form__tel_left field-tel_left" type="text" placeholder="+7" readonly>
+            <input class="popup-form__tel_right field-tel_right" name="phone" type="tel" required>
           </div>
         </label>
-        <label class="popup__form-label">
+        <label class="popup-form__label">
           Гражданство
-          <select class="popup__form-select popup__form-field field form-select" name="nationality" required>
+          <select class="popup-form__select popup-form__field field form-select" name="nationality" required>
             <option value="" selected>Выберите из списка</option>
             <option value="Россия">Россия</option>
             <option value="Украина">Украина</option>
@@ -43,7 +43,7 @@
             <option value="Китай">Китай</option>
           </select>
         </label>
-        <button class="popup__form-button button" form="form-popup" type="submit">Записаться на
+        <button class="popup-form__button button" form="form-popup" type="submit">Записаться на
           собеседование</button>
       </form>
     </div>
